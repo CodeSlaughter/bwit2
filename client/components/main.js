@@ -3,7 +3,8 @@ import PropTypes from 'prop-types'
 import {connect} from 'react-redux'
 import {withRouter, Link} from 'react-router-dom'
 import {logout} from '../store'
-import {Nav} from '../components'
+import {Header} from '../components'
+
 
 /**
  * COMPONENT
@@ -17,20 +18,8 @@ const Main = (props) => {
   return (
     <div className="homepage">
     <div id="page-wrapper">
-				<div id="header">
-						<div className="inner">
-							<header>
-								<h1><a href="index.html" id="logo">Helios</a></h1>
-								<hr />
-								<p>Another fine freebie by HTML5 UP</p>
-							</header>
-							<footer>
-								<a href="#banner" className="button circled scrolly">Start</a>
-							</footer>
-						</div>
-						<Nav />
-
-				</div>
+		<Header />
+				
 
 				<section id="banner">
 					<header>
@@ -326,6 +315,7 @@ const Main = (props) => {
 									<div className="copyright">
 										<ul className="menu">
 											<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+											<li>Photo by Fancycrave from Pexels</li>
 										</ul>
 									</div>
 

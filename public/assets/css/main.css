@@ -2118,7 +2118,7 @@
 			z-index: 1;
 			margin: 0;
 			display: inline-block;
-			vertical-align: middle;
+			vertical-align: top;
 		}
 
 		#header header {
