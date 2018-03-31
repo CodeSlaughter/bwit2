@@ -58,13 +58,13 @@
 		-ms-behavior: url("assets/js/ie/backgroundsize.min.htc");
 	}
 
-	body.homepage #header {
+	div.homepage #header {
 		height: auto;
 		min-height: 0;
 		padding: 12em 0 12em 0;
 	}
 
-		body.homepage #header:after {
+		div.homepage #header:after {
 			display: none;
 		}
 
