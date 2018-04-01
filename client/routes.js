@@ -4,18 +4,20 @@ import {Router} from 'react-router'
 import {Route, Switch} from 'react-router-dom'
 import PropTypes from 'prop-types'
 import history from './history'
-import {Main, Login, Signup, UserHome} from './components'
-import {me} from './store'
+import {Main, Login, Signup, UserHome, Landing, SingleArticle} from './components'
+import {me, fetchArticles} from './store'
 
 /**
  * COMPONENT
  */
 class Routes extends Component {
-  componentDidMount () {
+  componentWillMount () {
     this.props.loadInitialData()
   }
+  
 
   render () {
+    console.log(this.props)
     const {isLoggedIn} = this.props
 
     return (
@@ -25,6 +27,8 @@ class Routes extends Component {
             {/* Routes placed here are available to all visitors */}
             <Route path="/login" component={Login} />
             <Route path="/signup" component={Signup} />
+            <Route exact path="/" component={Landing} />
+            <Route path="/articles" component={SingleArticle} />
             {
               isLoggedIn &&
                 <Switch>
@@ -48,7 +52,8 @@ const mapState = (state) => {
   return {
     // Being 'logged in' for our purposes will be defined has having a state.user that has a truthy id.
     // Otherwise, state.user will be an empty object, and state.user.id will be falsey
-    isLoggedIn: !!state.user.id
+    isLoggedIn: !!state.user.id,
+    articles: state.articles
   }
 }
 
@@ -56,16 +61,10 @@ const mapDispatch = (dispatch) => {
   return {
     loadInitialData () {
       dispatch(me())
+      dispatch(fetchArticles())
     }
   }
 }
 
 export default connect(mapState, mapDispatch)(Routes)
 
-/**
- * PROP TYPES
- */
-Routes.propTypes = {
-  loadInitialData: PropTypes.func.isRequired,
-  isLoggedIn: PropTypes.bool.isRequired
-}
