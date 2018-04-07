@@ -17,7 +17,7 @@ export class Carousel extends Component{
     render(){
         let articles = this.props.articles;
         const articleList = articles && articles.map((article) => {
-            return <CarouselArticle key={article.id} title={article.title} subtitle={article.subtitle} />
+            return <CarouselArticle key={article.id} article={article} />
         }) 
         return (
             <section className="carousel">

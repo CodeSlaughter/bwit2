@@ -5,8 +5,12 @@ import {Nav} from '../components'
 /**
  * COMPONENT
  */
-export const SingleArticle = (props) => {
-
+export const SingleArticle = (props) => {   
+    const articles = props.articles === undefined ? [{title: '', subtitle: '', image: ''}] : props.articles.filter((article) => {
+        return article.id === Number(props.match.params.articleId)
+    })
+    const article = articles[0]
+    console.log(article.title)
   return (
     <div className="no-sidebar">
 		<div id="page-wrapper">
@@ -14,7 +18,7 @@ export const SingleArticle = (props) => {
 				<div id="header">
 						<div className="inner">
 							<header>
-								<h1><a href="index.html" id="logo">BWIT</a></h1>
+								<h1><a href="index.html" id="logo" /></h1>
 							</header>
 						</div>
 						<Nav />
@@ -25,9 +29,9 @@ export const SingleArticle = (props) => {
 					<div className="container">
 						<article id="main" className="special">
 							<header>
-								<h2><a href="#">No Sidebar</a></h2>
+								<h2><a href="#">{article.title}</a></h2>
 								<p>
-									Morbi convallis lectus malesuada sed fermentum dolore amet
+									{article.subtitle}
 								</p>
 							</header>
 							<a href="#" className="image featured"><img src="images/pic06.jpg" alt="" /></a>
@@ -114,7 +118,8 @@ export const SingleArticle = (props) => {
  */
 const mapState = (state) => {
   return {
-    email: state.user.email
+    email: state.user.email,
+    articles: state.articles
   }
 }
 

@@ -13,15 +13,14 @@ export class CarouselArticle extends Component {
         }
       }
       render(){
-        const title = this.props.title
-        const subtitle = this.props.subtitle
+        const article = this.props.article
         return (
             <article>
             <a href="#" className="image featured"><img src="images/pic01.jpg" alt="" /></a>
             <header>
-                <h3><NavLink to={`/articles`}>{title}</NavLink></h3>
+                <h3><NavLink to={`/articles/${article.id}`}>{article.title}</NavLink></h3>
             </header>
-            <p>{subtitle}</p>
+            <p>{article.subtitle}</p>
             </article>
         )
         }

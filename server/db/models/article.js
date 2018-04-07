@@ -13,6 +13,9 @@ const Article = db.define('article', {
   },
   author: {
     type: Sequelize.STRING
+  },
+  image: {
+    type: Sequelize.STRING
   }
 })
 
