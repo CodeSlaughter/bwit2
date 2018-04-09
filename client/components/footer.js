@@ -118,9 +118,9 @@ export const Footer = (props) => {
 
                 <section className="contact">
                     <header>
-                        <h3>Nisl turpis nascetur interdum?</h3>
+                        <h3>Are you ready to take control of your financial future?</h3>
                     </header>
-                    <p>Urna nisl non quis interdum mus ornare ridiculus egestas ridiculus lobortis vivamus tempor aliquet.</p>
+                    <p />
                     <ul className="icons">
                         <li><a href="#" className="icon fa-twitter"><span className="label">Twitter</span></a></li>
                         <li><a href="#" className="icon fa-facebook"><span className="label">Facebook</span></a></li>

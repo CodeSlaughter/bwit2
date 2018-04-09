@@ -6,11 +6,14 @@ import {Nav} from '../components'
  * COMPONENT
  */
 export const SingleArticle = (props) => {   
-    const articles = props.articles === undefined ? [{title: '', subtitle: '', image: ''}] : props.articles.filter((article) => {
+    const articles = props.articles.filter((article) => {
         return article.id === Number(props.match.params.articleId)
     })
     const article = articles[0]
-    console.log(article.title)
+	//console.log(article.title)
+	if (article === undefined){
+		return <div />
+	}
   return (
     <div className="no-sidebar">
 		<div id="page-wrapper">

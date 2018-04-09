@@ -15,7 +15,7 @@ console.log(props)
 				<section id="banner">
 					<header>
 						<h2>Hi, and welcome to <strong>BWIT</strong>.</h2>
-						<p>This site was created with the mission to educate and guide black women into the world of investing. Women have been historically known to invest at a lower percentage than men, and when race is taken into account (white male investors vs. black female investors) this number is even more pronounced. The disparity between the net-worth of a white individual compared to black is startling. The stock market and the world of investing see’s no color or gender and is the on place where a black woman can play catch financial catch up on somewhat equal footing. A recent report has shown that for every dollar of wealth owned by a white family, a black family owns just 5 cents. So let’s get started. 
+						<p>This site was created with the mission to educate and guide black women into the world of investing.
 						</p>
 					</header>
 				</section>
@@ -26,23 +26,15 @@ console.log(props)
 				<div className="wrapper style2">
 
 					<article id="main" className="container special">
-						<a href="#" className="image featured"><img src="images/pic06.jpg" alt="" /></a>
+						<a href="#" className="image featured"><img src="images/chart.jpeg" alt="" /></a>
 						<header>
-							<h2><a href="#">Sed massa imperdiet magnis</a></h2>
+							<h2>Learn the power of investing</h2>
 							<p>
-								Sociis aenean eu aenean mollis mollis facilisis primis ornare penatibus aenean. Cursus ac enim
-								pulvinar curabitur morbi convallis. Lectus malesuada sed fermentum dolore amet.
+								"An investment in knowledge pays the best interest." - Benjamin Franklin
 							</p>
 						</header>
 						<p>
-							Commodo id natoque malesuada sollicitudin elit suscipit. Curae suspendisse mauris posuere accumsan massa
-							posuere lacus convallis tellus interdum. Amet nullam fringilla nibh nulla convallis ut venenatis purus
-							sit arcu sociis. Nunc fermentum adipiscing tempor cursus nascetur adipiscing adipiscing. Primis aliquam
-							mus lacinia lobortis phasellus suscipit. Fermentum lobortis non tristique ante proin sociis accumsan
-							lobortis. Auctor etiam porttitor phasellus tempus cubilia ultrices tempor sagittis. Nisl fermentum
-							consequat integer interdum integer purus sapien. Nibh eleifend nulla nascetur pharetra commodo mi augue
-							interdum tellus. Ornare cursus augue feugiat sodales velit lorem. Semper elementum ullamcorper lacinia
-							natoque aenean scelerisque.
+						Women have been historically known to invest at a lower percentage than men, and when race is taken into account (white male investors vs. black female investors) this number is even more pronounced. The disparity between the net-worth of a white individual compared to black is startling. The stock market and the world of investing see’s no color or gender and is the on place where a black woman can play financial catch up on somewhat equal footing. A recent report has shown that for every dollar of wealth owned by a white family, a black family owns just 5 cents. So let’s get started. 
 						</p>
 						<footer>
 							<a href="#" className="button">Continue Reading</a>
