@@ -15,7 +15,7 @@ console.log(props)
 				<section id="banner">
 					<header>
 						<h2>Hi, and welcome to <strong>BWIT</strong>.</h2>
-						<p>This site was created with the mission to educate and guide black women into the world of investing.
+						<p>Black Women Invest Too or BWIT is site was created with the mission to educate and guide black women into the world of investing.
 						</p>
 					</header>
 				</section>
@@ -47,8 +47,8 @@ console.log(props)
 
 					<section id="features" className="container special">
 						<header>
-							<h2>Morbi ullamcorper et varius leo lacus</h2>
-							<p>Ipsum volutpat consectetur orci metus consequat imperdiet duis integer semper magna.</p>
+							<h2>Checkout our newest articles</h2>
+							<p />
 						</header>
 						<div className="row">
 							<article className="4u 12u(mobile) special">

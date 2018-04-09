@@ -17,7 +17,7 @@ export const Nav = (props) => {
                 <li><a href="#">Budgeting</a></li>
             </ul>
         </li>
-        <li><a href="left-sidebar.html">About Us</a></li>
+        <li><a href="/about-us">About Us</a></li>
     </ul>
 </nav>
   )
